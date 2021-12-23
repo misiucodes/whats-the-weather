@@ -46,5 +46,5 @@ function getPosition(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(showPositionTemp);
 }
-    let button = document.querySelector("#btn-location");
+  let button = document.querySelector("#btn-location");
   button.addEventListener("click", getPosition);
