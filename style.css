@@ -15,7 +15,7 @@ h2 {
   width: 100px;
   left: 50%;
   margin-left: -50px;
-  top: 15%;
+  top: 25%;
   margin-top: -50px;
 }
 
@@ -29,7 +29,7 @@ h3 {
   width: 100px;
   left: 50%;
   margin-left: -50px;
-  top: 33%;
+  top: 43%;
   margin-top: -50px;
 }
 
@@ -42,7 +42,7 @@ h4 {
   width: 100px;
   left: 50%;
   margin-left: -25px;
-  top: 44%;
+  top: 54%;
   margin-top: -50px;
 }
 
@@ -57,7 +57,7 @@ h5 {
   width: 100px;
   left: 50%;
   margin-left: -50px;
-  top: 9%;
+  top: 19%;
   margin-top: -50px;
   text-align: center !important;
 }
