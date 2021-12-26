@@ -238,6 +238,19 @@ hr {
   border-radius: 25px;
 }
 
+.link-github {
+  position: relative;
+  top: 22%;
+  color: white;
+  text-decoration: none;
+  left: 12px;
+  font-size: 13px;
+}
+
+.link-github:hover {
+  color: rgb(255, 142, 77);
+}
+
 .mobile {
   width: 276px;
   height: 580px;
