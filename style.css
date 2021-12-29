@@ -6,7 +6,7 @@ a {
 body {
   margin: 0;
   padding: 0;
-  max-width: 100%;
+  max-width: 1580px;
 }
 
 h2 {
@@ -323,7 +323,7 @@ hr {
   border-top-right-radius: 4px;
 }
 
-.snow-icon {
+.main-icon {
   top: -193px;
   position: relative;
   margin: 0 auto !important;
