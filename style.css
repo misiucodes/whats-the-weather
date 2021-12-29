@@ -1,3 +1,7 @@
+a {
+  color: #64d1a7;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -110,7 +114,7 @@ hr {
 }
 
 .button-location:hover {
-  background: rgb(255, 142, 77);
+  background: rgb(132, 105, 219);
   color: white;
   cursor: pointer;
 }
@@ -161,16 +165,11 @@ hr {
   right: 0px;
   top: -13px;
 }
-
 .footer {
-  font-size: 12px;
-  font-family: "Poppins", sans-serif;
-  color: #90d4ba;
+  top: 90px;
+  color: white;
   position: relative;
-  margin-top: 100px !important;
-  margin-left: 12px;
-  font-weight: 300;
-  display: block;
+  left: 10px;
 }
 
 .form-control {
@@ -236,19 +235,6 @@ hr {
   background: #413f3f;
   box-sizing: border-box;
   border-radius: 25px;
-}
-
-.link-github {
-  position: relative;
-  top: 22%;
-  color: white;
-  text-decoration: none;
-  left: 12px;
-  font-size: 13px;
-}
-
-.link-github:hover {
-  color: rgb(255, 142, 77);
 }
 
 .mobile {
