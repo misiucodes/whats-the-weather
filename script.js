@@ -28,18 +28,22 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", showCity);
 
 function showTemperature(response) {
-  console.log(response);
   let h5 = document.querySelector("h5");
   h5.innerHTML = `${response.data.name}`;
   let temperature = Math.round(response.data.main.temp);
-  let h3 = document.querySelector("h3");
-  h3.innerHTML = `${temperature}°c`;
+  let showCityTemp = document.querySelector("#current-temp");
+  showCityTemp.innerHTML = `${temperature}`;
   let h4 = document.querySelector("h4");
   h4.innerHTML = `${response.data.weather[0].description}`;
   let mainIcon = document.querySelector("#main-icon");
   mainIcon.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-}  
 
+  let humidity = document.querySelector("#humidity-value");
+  let windspeed = document.querySelector("#windspeed-value");
+  humidity.innerHTML = `${response.data.main.humidity}%`;
+  windspeed.innerHTML = `${response.data.wind.speed} km/h`;
+  celciusTemperature = response.data.main.temp;
+}  
 
 function showPositionTemp(position) {
   let latitude = position.coords.latitude;
@@ -54,3 +58,33 @@ function getPosition(event) {
 }
   let button = document.querySelector("#btn-location");
   button.addEventListener("click", getPosition);
+
+
+function convertToFarenheit(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#current-temp");
+  let temperature = temperatureElement.innerHTML;
+  temperatureElement.innerHTML = Math.round((celciusTemperature * 9) / 5 + 32);
+}
+
+let farenheitLink = document.querySelector("#farenheit-link");
+farenheitLink.addEventListener("click", convertToFarenheit)
+
+function convertToCelcius(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#current-temp");
+  let temperature = temperatureElement.innerHTML;
+  temperatureElement.innerHTML = Math.round(celciusTemperature);
+}
+
+let celciusLink = document.querySelector("#celcius-link");
+celciusLink.addEventListener("click", convertToCelcius)
+
+let celciusTemperature = null;
+
+function showHumidityandWindspeed(response) {
+  let humidity = document.querySelector("#humidity-value");
+  let windspeed = document.querySelector("#windspeed-value");
+
+
+}

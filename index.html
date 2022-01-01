@@ -30,7 +30,10 @@
     </button>
 
     <small class="footer"> 
-      <a href="https://github.com/misiucodes/whats-the-weather" target="blank">
+      <a 
+      href="https://github.com/misiucodes/whats-the-weather" 
+      class="github-link"
+      target="blank">
        Open source code
       </a>by Michelle Tran
       
@@ -42,7 +45,7 @@
       <div class="mobile">
         <div class="screen">
           
-            <img src="img/galaxy-bg.svg" class="img-bg"></img>
+            <img src="img/bluemountain-bg.svg" class="img-bg"></img>
 
             <div class="current-forecast">
               <h5>Toronto</h5>
@@ -53,15 +56,27 @@
                 <div class="main-icon">
                   <img src="img/snow.svg" width="80px" id="main-icon"></img>
                 </div>
-                <span class="current-temp">2</span><small class="units">°C | F</small>
+                <span class="current-temp" id="current-temp">2</span>
+                <small class="units">
+                  <a href="#" class="celcius" id="celcius-link">°C </a>
+                  | 
+                  <a href="#" class="farenheit" id="farenheit-link">F</a>
+                </small>
               </div>
 
             <div class="current-temp-info">
-              <div class="humidity">Humidity:</div>
-              <div class="windspeed">Windspeed:</div>
+              <ul class="current-temp-info">
+                  <li class="temp-info">
+                    <span>Humidity:</span>
+                    <span id="humidity-value"> </span>
+                  </li>
+              
+                <li class="temp-info">
+                  <span>Windspeed:</span>
+                  <span id="windspeed-value"> </span>
+                </li>
+              </ul>
             </div>
-
-                  
 
             </div>
 
