@@ -28,6 +28,7 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", showCity);
 
 function showTemperature(response) {
+  console.log(response);
   let h5 = document.querySelector("h5");
   h5.innerHTML = `${response.data.name}`;
   let temperature = Math.round(response.data.main.temp);
@@ -35,11 +36,10 @@ function showTemperature(response) {
   h3.innerHTML = `${temperature}°c`;
   let h4 = document.querySelector("h4");
   h4.innerHTML = `${response.data.weather[0].description}`;
-  let forecastIcons = document.querySelector(".forecast-icon");
-  forecastIcons.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   let mainIcon = document.querySelector("#main-icon");
   mainIcon.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }  
+
 
 function showPositionTemp(position) {
   let latitude = position.coords.latitude;

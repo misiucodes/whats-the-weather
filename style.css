@@ -13,16 +13,17 @@ h2 {
   position: absolute;
   font-weight: normal;
   font-weight: 300 !important;
-  font-size: 16px !important;
+  font-size: 12px !important;
   color: white;
   text-align: center !important;
   font-family: "Poppins", sans-serif;
   height: 100px;
   width: 100px;
-  left: 50%;
+  left: 25%;
   margin-left: -50px;
   top: 25%;
   margin-top: -50px;
+  text-align: left !important;
 }
 
 h3 {
@@ -30,26 +31,30 @@ h3 {
   font-size: 43px !important;
   font-family: "Poppins", sans-serif;
   color: white;
-  text-align: center !important;
+  text-align: left !important;
   height: 100px;
   width: 100px;
-  left: 50%;
+  left: 25%;
   margin-left: -50px;
   top: 43%;
   margin-top: -50px;
 }
 
 h4 {
-  position: relative;
-  font-family: "Poppins", sans-serif;
+  position: absolute;
+  font-weight: normal;
+  font-weight: 300 !important;
+  font-size: 12px !important;
   color: white;
-  font-size: 15px !important;
+  text-align: center !important;
+  font-family: "Poppins", sans-serif;
   height: 100px;
   width: 100px;
-  left: 50%;
-  margin-left: -25px;
-  top: 50% !important;
-  margin-top: -99px;
+  left: 25%;
+  margin-left: -50px;
+  top: 29%;
+  margin-top: -50px;
+  text-align: left !important;
 }
 
 h5 {
@@ -61,11 +66,11 @@ h5 {
   font-weight: 400 !important;
   height: 100px;
   width: 100px;
-  left: 50%;
+  left: 25%;
   margin-left: -50px;
   top: 19%;
   margin-top: -50px;
-  text-align: center !important;
+  text-align: left !important;
 }
 
 form {
@@ -152,6 +157,40 @@ hr {
 .container-wrapper {
   display: block;
   margin: 0px 13px 0px 293px;
+}
+
+span.current-temp {
+  position: absolute;
+  font-weight: normal;
+  font-weight: 300 !important;
+  font-size: 50px !important;
+  color: white;
+  text-align: center !important;
+  font-family: "Poppins", sans-serif;
+  height: 100px;
+  width: 100px;
+  left: 62%;
+  margin-left: -50px;
+  top: 49%;
+  margin-top: -62px;
+  text-align: left !important;
+}
+
+div.current-temp-info {
+  position: absolute;
+  font-weight: normal;
+  font-weight: 300 !important;
+  font-size: 12px !important;
+  color: white;
+  text-align: center !important;
+  font-family: "Poppins", sans-serif;
+  height: 100px;
+  width: 100px;
+  left: 25%;
+  margin-left: 87px;
+  top: 29%;
+  margin-top: -68px;
+  text-align: left !important;
 }
 
 .img-bg {
@@ -312,7 +351,7 @@ hr {
 }
 
 .main-icon {
-  top: -193px;
+  top: -162px;
   position: relative;
   margin: 0 auto !important;
   left: 86px;
@@ -352,6 +391,13 @@ hr {
   font-weight: 500;
   text-align: right !important;
   margin: 0 2px;
+}
+
+small.units {
+  position: relative;
+  color: white;
+  top: -181px;
+  margin-left: 144px;
 }
 
 /* Gradient color1 - color2 - color1 */
