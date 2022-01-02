@@ -41,7 +41,7 @@ function showTemperature(response) {
   let humidity = document.querySelector("#humidity-value");
   let windspeed = document.querySelector("#windspeed-value");
   humidity.innerHTML = `${response.data.main.humidity}%`;
-  windspeed.innerHTML = `${response.data.wind.speed} km/h`;
+  windspeed.innerHTML = `${Math.round(response.data.wind.speed)} km/h`;
   celciusTemperature = response.data.main.temp;
 }  
 
